@@ -8,3 +8,51 @@ p{
     font-style: italic;
     
 }
+
+        #gear{
+            animation-name: ckw;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transform-origin: 40% 60%;
+            display: inline-block;
+            animation-timing-function: linear;
+            color: blue;
+            margin: 10px;
+            height: auto;
+        }
+        
+        #header{
+            height: 5px;
+            margin: 30px;
+            width: 958px;
+            position: relative;
+        }
+        #logo{
+            background: transparent url(arg-programa.png) no-repeat;
+
+  float: left;
+        }
+        #logo a {
+  display: block;
+  text-indent: -999px;
+  height: 100px; 
+  width: 360px;
+  margin: 20px;
+        }
+        @keyframes ckw {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+		#social{
+			/*las imágenes usadas tienen width de 48px*/
+        width: 1px;
+        height: 1px;
+        margin: 20px;
+		}
