@@ -8,3 +8,9 @@ p{
     font-style: italic;
     
 }
+body {
+    
+    background-image: url("fondo1.jpg");
+    background-size: 10rem;
+    
+  }
