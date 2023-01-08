@@ -1,96 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Engranaje rodando</title>
-    <style>
-        #gear{
-            animation-name: ckw;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            transform-origin: 40% 60%;
-            display: inline-block;
-            animation-timing-function: linear;
-            color: blue;
-            margin: 10px;
-            height: auto;
-        }
-        
-        #header{
-            height: 5px;
-            margin: 30px;
-            width: 958px;
-            position: relative;
-        }
-        #logo{
-            background: transparent url(arg-programa.png) no-repeat;
-
-  float: left;
-        }
-        #logo a {
-  display: block;
-  text-indent: -999px;
-  height: 100px; 
-  width: 360px;
-  margin: 20px;
-        }
-        @keyframes ckw {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        *{box-sizing:border-box;}
-
-		.container{
-			width:95%;
-			max-width:900px;
-			padding:32px 64px;
-			margin:auto;
-		}
-
-		.social{
-			/*las imágenes usadas tienen width de 48px*/
-			width:48px;
-			position:fixed;
-			top:50px;
-			right:0;
-		}
-
-		/* Extra centrado vertical*/
-
-		.social{
-			/*border:1px solid #000;*/
-			top:50%;
-			height:205px;
-			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
-			margin-top:-100px;
-		}
-
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portafolio prueba</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
 </head>
-<body background="fondo4.jpg">
-    <div class="container">
 
+
+<body>
+    
+    <!--Imagen fondo de la Pagina-->
+
+    <div class="back">
+        <div class="content">
+            <div class="img1"></div>
+        </div>
     </div>
+
+    <!--Menu Encabezado-->
+    
+    <div class="container=header">
+        <header class="logo">
+        <a href="arg-programa.png">Argentina Programa</a>
+    </div>   
+    
+    <nav id="nav">
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#sobremi">SOBRE MI</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#curriculum">CURRICULUM</a></li>
+            <li><a href="#portafolio">PORTAFOLIO</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <div class="nav-responsive">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!--Logos Redes Sociales-->
+    
     <div class="social">
 		<a href="#"><img src="imgfacebook.png" alt="facebook"></a>
 		<a href="#"><img src="imgyoutube.png" alt="youtube"></a>
 		<a href="#"><img src="imglinkedin.png" alt="linkedin"></a>
 		<a href="#"><img src="imginstagram.png" alt="instagram"></a>
 	</div>
-<h1 id="logo" >
-    <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" title="Full Stack Developer"> Curso de Programacion</a>
-   
-    </h1>
-    <h2>Full Stack Developer</h2>
-    <h3>Ing. Jhovanny Garcia</h3>
-    </div>
-    
-    <img id='gear' src='data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEwMjQiIHdpZHRoPSI4OTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y%0D%0AMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTQ0Ny45MzggMzUwQzM1OC41MzEgMzUwIDI4NiA0MjIuNTMx%0D%0AIDI4NiA1MTJjMCA4OS4zNzUgNzIuNTMxIDE2Mi4wNjIgMTYxLjkzOCAxNjIuMDYyIDg5LjQzOCAw%0D%0AIDE2MS40MzgtNzIuNjg4IDE2MS40MzgtMTYyLjA2MkM2MDkuMzc1IDQyMi41MzEgNTM3LjM3NSAz%0D%0ANTAgNDQ3LjkzOCAzNTB6TTc3Mi42MjUgNjA1LjA2MmwtMjkuMTg4IDcwLjMxMiA1Mi4wNjIgMTAy%0D%0ALjI1IDYuODc1IDEzLjUtNzIuMTg4IDcyLjE4OEw2MTEuNzUgODA3LjM3NWwtNzAuMzEyIDI4Ljg3%0D%0ANUw1MDUuNzUgOTQ1LjVsLTQuNTYyIDE0LjVIMzk5LjE1NkwzNTUgODM2LjY4OGwtNzAuMzEyLTI5%0D%0ALTEwMi40MDQgNTEuOTM4LTEzLjUgNi43NS03Mi4xNTYtNzIuMTI1IDU1Ljg3NS0xMTguNS0yOC45%0D%0ANjktNzAuMjVMMTQuNDY5IDU2OS44NzUgMCA1NjUuMTg4VjQ2My4yMTlMMTIzLjQwNiA0MTlsMjgu%0D%0AOTY5LTcwLjE4OC01MS45MDYtMTAyLjQ2OS02Ljg0NC0xMy40MzggNzIuMDYyLTcyLjA2MiAxMTgu%0D%0ANTk0IDU1Ljg0NCA3MC4yMTktMjkuMDMxIDM1LjY1Ni0xMDkuMTg4TDM5NC43NSA2NGgxMDJsNDQu%0D%0AMTg4IDEyMy40NjkgNzAuMTI1IDI5LjAzMUw3MTMuNSAxNjQuNTMwOTk5OTk5OTk5OTVsMTMuNjI1%0D%0ALTYuODQ0IDcyLjEyNSA3Mi4wNjItNTUuODc1IDExOC40MDZMNzcyLjI1IDQxOC41bDEwOS4zNzUg%0D%0AMzUuNjU2TDg5NiA0NTguNzV2MTAxLjkzOEw3NzIuNjI1IDYwNS4wNjJ6IiAvPgo8L3N2Zz4K' height="80">
- 
+     
 </body>
 </html>
